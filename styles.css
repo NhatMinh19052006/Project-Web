@@ -1,77 +1,145 @@
-/* ===== About Page (Nguyet Linh) ===== */
+/* EdTech page styling */
 body {
-  font-family: Arial, sans-serif;
-  color: #0b0a0a;
-  background-color: #faf7f7;
   margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #243247;
+  background: #f4f8fc;
+  line-height: 1.6;
 }
 
-header {
-  background-color: #331fd0;
-  padding: 15px;
+/* Top bar and navigation */
+.header {
+  background: #eaf4fc;
+  padding-bottom: 28px;
 }
 
-nav ul {
-  list-style: none;
+.header .ok {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 12px 6%;
+  background: #d4e8f7;
+}
+
+#logo {
+  display: block;
+  width: 65px;
+  height: auto;
+}
+
+.header .ok nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  float: none;
+}
+
+.header .ok nav .menu {
+  display: block;
   margin: 0;
   padding: 0;
 }
 
-nav li {
-  display: inline;
-  margin-right: 20px;
+.header .ok nav .menu a {
+  display: block;
+  padding: 10px 18px;
+  color: #214768;
+  text-decoration: none;
+  border-radius: 8px;
 }
 
-nav a {
-  color: white;
+.header .ok nav .menu a:hover {
+  color: #075e9e;
+  background: #fff;
   text-decoration: none;
 }
 
-nav a:hover {
-  text-decoration: underline;
+/* Company name and slogan */
+.header h1,
+.header h2 {
+  margin: 18px 6% 0;
 }
+
+.header h2 {
+  font-size: 1.2rem;
+}
+
+/* Main content */
 main {
-  width: 90%;
-  margin: 0 auto;
-  padding: 10px;
+  width: min(100% - 40px, 1050px);
+  margin: 32px auto;
+  padding: 0;
 }
 
-h1, h2 {
-  color: #348962;
+.intro {
+  max-width: 800px;
+  margin-bottom: 28px;
 }
 
-.slogan {
-  font-style: italic;
-  font-size: 20px;
-  color: #59a8da;
+main h2 {
+  color: #176b87;
+}
+
+.job {
+  margin: 20px 0;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #dce7f0;
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgb(30 65 95 / 8%);
+}
+
+.job h3 {
+  margin-top: 0;
+  color: #145f82;
+}
+
+.job h4 {
+  margin-bottom: 6px;
+}
+
+.job ul {
+  padding-left: 22px;
+}
+
+.job a {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 10px 16px;
+  color: #fff;
+  background: #1675a8;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.job a:hover {
+  background: #105b83;
 }
 
 footer {
-  background-color: #331fd0;
-  color: white;
+  margin-top: 40px;
+  padding: 18px;
+  color: #fff;
+  background: #214768;
   text-align: center;
-  padding: 10px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-.site-header .brand img.site-logo {
-  display: block;
-  width: 120px;
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
+@media (max-width: 600px) {
+  .header .ok {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 
-.site-logo {
-  display: block;
-  width: 120px;
-  max-width: 120px;
-  height: auto;
+  .header .ok nav {
+    flex-wrap: wrap;
+  }
+
+  .header .ok nav .menu a {
+    padding: 8px 12px;
+  }
 }
