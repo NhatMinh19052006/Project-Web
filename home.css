@@ -1,0 +1,102 @@
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+body {
+    margin: 0px;
+}
+.header {
+    background-image: url(images/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+#logo{
+    margin: 10px;
+    border-radius: 15px;
+}
+
+nav{
+    float: right;
+    padding-top: 20px;
+}
+
+.menu {
+    display: inline-block;
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.menu a {
+    color: darkslateblue; 
+    text-decoration: none; 
+    font-size: 25px;
+}
+
+.menu a:hover {
+    color: black; 
+    text-decoration: underline; 
+}
+
+.header h1{
+    text-align: center;
+    color: chocolate;
+}
+.header h2{
+    text-align: center;
+    color: darkorange ;
+}
+#trang p{
+    text-align: left;
+    color: lightslategray;
+}
+
+
+#trang p {
+    margin: 15px 0;
+    text-align: left;
+    color: #333333; 
+    font-size: 16px;
+}
+
+#diff {
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+table, th, td {
+    border: 1px solid grey;
+    padding: 8px;
+}
+
+.blue {
+    color: rgb(26, 153, 153); 
+    font-weight: bold; 
+    font-size: 24px;
+}
+
+
+#diff aside{
+   border: purple solid 3px;
+    border-radius: 15px;
+    float: right;
+    margin: 15px;
+    padding: 20px;
+    font-style: italic;
+    background-image: url(images/fade.jpg);
+    background-repeat: repeat-x;
+    width: 30%;
+    box-shadow: 10px 10px 20px grey;
+}
+
+.jobs form{
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    width: 60%;
+}
+
+footer{
+    border-top: 3px double black;
+}
