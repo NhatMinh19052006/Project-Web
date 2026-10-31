@@ -9,8 +9,17 @@ body {
 header {
   background-color: #331fd0;
   padding: 15px;
+  display: flex; 
+  align-items: center; 
+  gap: 20px;
 }
-
+.logo {
+  height: 60px;
+  width: 60px;
+  display: block;
+  background: #ffffff;
+  border-radius: 8px;
+}
 nav ul {
   list-style: none;
   margin: 0;
@@ -47,7 +56,7 @@ h1, h2 {
 .slogan {
   font-style: italic;
   font-size: 20px;
-  color: #59a8da;
+  color: #1f6fa8;
 }
 
 /* Definition list: member contributions and quotes */
