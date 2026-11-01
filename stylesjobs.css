@@ -48,15 +48,6 @@ nav{
     text-decoration: underline; 
 }
 
-.header h1,
-.header h2 {
-  margin: 18px 6% 0;
-}
-
-.header h2 {
-  font-size: 1.2rem;
-}
-
 main {
   width: min(100% - 40px, 1050px);
   margin: 32px auto;
