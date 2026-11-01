@@ -3,12 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apply</title>
+    <title>Apply | SkyPath</title>
+    <link rel="stylesheet" href="apply.css">
+    <script src="apply.js" defer></script>
 </head>
 <body>
-    <h1>Job Application Form</h1>
+    <header class="site-header">
+        <div class="ok">
+            <a href="index.html" aria-label="SkyPath home">
+                <img id="logo" src="images/logo.jpg" alt="SkyPath logo" width="65">
+            </a>
+            <nav aria-label="Main navigation">
+                <div class="menu"><a href="index.html"><strong>MENU</strong></a></div>
+                <div class="menu"><a href="jobs.html"><strong>JOBS</strong></a></div>
+                <div class="menu"><a href="apply.html" aria-current="page"><strong>APPLY</strong></a></div>
+                <div class="menu"><a href="about.html"><strong>ABOUT</strong></a></div>
+            </nav>
+        </div>
+        <div class="site-heading">
+            <h1><span>Sky</span>Path</h1>
+            <h2>Elevating your expectations.</h2>
+        </div>
+    </header>
+    <main class="application-page">
+        <h1>Job Application Form</h1>
 
-    <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+    <form action="submitted.html" method="post">
 
         <label for="jobref">Job Reference Number:</label>
         <input type="text" id="jobref" name="jobref"
@@ -134,5 +154,6 @@
         <input type="reset" value="Reset">
 
     </form>
+    </main>
 </body>
 </html>

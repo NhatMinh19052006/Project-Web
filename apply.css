@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0 0 32px;
+    background: #f1f6fb;
+    color: #19324a;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.site-header {
+    background: #f1f6fb;
+}
+
+.site-header .ok {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    display: flex;
+    min-height: 82px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 8px 5%;
+    background: #cddfef;
+    box-shadow: 0 2px 8px rgb(25 50 74 / 12%);
+}
+
+#logo {
+    display: block;
+    width: 65px;
+    height: 65px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.site-header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.site-header .menu a {
+    display: block;
+    padding: 10px 16px;
+    border-radius: 6px;
+    color: #19324a;
+    text-decoration: none;
+}
+
+.site-header .menu a:hover,
+.site-header .menu a[aria-current="page"] {
+    background: #fff;
+    color: #176da8;
+}
+
+.site-heading {
+    padding: 28px 16px 20px;
+    text-align: center;
+}
+
+.site-heading h1 {
+    margin: 0;
+    color: #000;
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.site-heading h1 span {
+    color: #007bff;
+}
+
+.site-heading h2 {
+    margin: 8px 0 0;
+    color: #19324a;
+    font-size: 1.15rem;
+}
+
+.application-page,
+.confirmation-page {
+    width: min(100%, 720px);
+    margin: 12px auto 0;
+    padding: 32px;
+    background: #fff;
+    border: 1px solid #dce7f0;
+    border-radius: 14px;
+    box-shadow: 0 12px 32px rgb(25 50 74 / 10%);
+}
+
+.application-page h1,
+.confirmation-page h1 {
+    margin: 0 0 24px;
+    color: #173d63;
+    font-size: clamp(1.7rem, 5vw, 2.25rem);
+}
+
+form br {
+    display: none;
+}
+
+form > label {
+    display: block;
+    margin: 18px 0 7px;
+    font-weight: 700;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 12px;
+    border: 1px solid #aebfce;
+    border-radius: 6px;
+    background: #fff;
+    color: inherit;
+    font: inherit;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid rgb(45 126 186 / 22%);
+    border-color: #287db8;
+}
+
+fieldset {
+    margin: 22px 0 0;
+    padding: 14px 16px;
+    border: 1px solid #c5d3df;
+    border-radius: 8px;
+}
+
+legend {
+    padding: 0 6px;
+    font-weight: 700;
+}
+
+fieldset label {
+    margin-right: 14px;
+}
+
+fieldset input {
+    accent-color: #176da8;
+}
+
+form > input[type="submit"],
+form > input[type="reset"],
+.confirmation-page a {
+    display: inline-block;
+    margin: 22px 8px 0 0;
+    padding: 11px 18px;
+    border: 0;
+    border-radius: 6px;
+    background: #176da8;
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form > input[type="reset"] {
+    background: #e8eef3;
+    color: #19324a;
+}
+
+form > input[type="submit"]:hover,
+.confirmation-page a:hover {
+    background: #105783;
+}
+
+form > input[type="reset"]:hover {
+    background: #d7e2eb;
+}
+
+.confirmation-page p {
+    line-height: 1.6;
+}
+
+@media (max-width: 520px) {
+    .site-header .ok {
+        align-items: flex-start;
+        gap: 8px;
+        padding: 8px 12px;
+    }
+
+    .site-header nav {
+        gap: 2px;
+    }
+
+    .site-header .menu a {
+        padding: 10px 8px;
+        font-size: 0.85rem;
+    }
+
+    .application-page,
+    .confirmation-page {
+        width: calc(100% - 20px);
+    }
+
+    .application-page,
+    .confirmation-page {
+        padding: 22px 18px;
+    }
+
+    fieldset label {
+        display: inline-block;
+        margin: 6px 10px 6px 0;
+    }
+}
