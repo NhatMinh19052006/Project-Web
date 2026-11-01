@@ -30,9 +30,8 @@ body {
 
 #logo {
     display: block;
-    width: 65px;
-    height: 65px;
-    border-radius: 12px;
+    width: 60px;
+    height: 60px;
     object-fit: cover;
 }
 
@@ -64,12 +63,12 @@ body {
 
 .site-heading h1 {
     margin: 0;
-    color: #000;
+    color: #348962;
     font-size: clamp(2rem, 5vw, 3rem);
 }
 
 .site-heading h1 span {
-    color: #007bff;
+    color: #331fd0;
 }
 
 .site-heading h2 {
