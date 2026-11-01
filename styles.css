@@ -139,3 +139,34 @@ footer {
     padding: 8px 12px;
   }
 }
+.job-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  text-align: left;
+}
+
+.job-table caption {
+  padding: 12px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.job-table th,
+.job-table td {
+  padding: 12px;
+  border: 1px solid #b8c9e7;
+}
+
+.job-table thead {
+  background: #eef4ff;
+}
+
+.job-table tbody tr:nth-child(even) {
+  background: #f8faff;
+}
+
+.job-table tfoot {
+  background: #f1f8f6;
+  font-weight: bold;
+}
