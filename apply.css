@@ -1,11 +1,6 @@
 html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-#diff {
-    padding-left: 40px;
-    padding-right: 40px;
-    box-sizing: border-box;
-}
 body {
     margin: 0px;
 }
@@ -27,12 +22,11 @@ nav{
     padding-top: 20px;
 }
 
-#logo {
-    display: block;
-    width: 65px;
-    height: 65px;
-    border-radius: 12px;
-    object-fit: cover;
+.menu {
+    display: inline-block;
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .menu a {
@@ -52,6 +46,11 @@ nav{
 .menu a:hover {
     color: black; 
     text-decoration: underline; 
+}
+#diff {
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
 }
 
 .site-heading {
@@ -186,8 +185,6 @@ form > input[type="reset"]:hover {
 }
 
 @media (max-width: 520px) {
-
-
     .application-page,
     .confirmation-page {
         width: calc(100% - 20px);
