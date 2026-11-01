@@ -1,6 +1,6 @@
 
 html {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
     margin: 0px;
@@ -10,9 +10,12 @@ body {
     background-size: cover;
     background-repeat: no-repeat; 
 }
-#logo{
-    margin: 10px;
-    border-radius: 15px;
+#logo {
+    margin-left: 10px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px; 
+    
 }
 
 nav{
@@ -28,9 +31,17 @@ nav{
 }
 
 .menu a {
-    color: darkslateblue; 
-    text-decoration: none; 
-    font-size: 25px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    text-decoration: none;
+}
+.header .ok{
+    position: sticky;
+    top: 0;
+    background-color: #CDDFEF;
 }
 
 .menu a:hover {
@@ -38,13 +49,14 @@ nav{
     text-decoration: underline; 
 }
 
-.header h1{
+.header h1 {
     text-align: center;
-    color: chocolate;
+    font-size: 80px;
 }
 .header h2{
     text-align: center;
-    color: darkorange ;
+    color: darkolivegreen;
+    font-size: 36px;
 }
 #trang p{
     text-align: left;
@@ -75,7 +87,6 @@ table, th, td {
     font-weight: bold; 
     font-size: 24px;
 }
-
 
 #diff aside{
    border: purple solid 3px;

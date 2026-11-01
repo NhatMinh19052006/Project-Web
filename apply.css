@@ -1,60 +1,56 @@
-* {
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#diff {
+    padding-left: 40px;
+    padding-right: 40px;
     box-sizing: border-box;
 }
-
 body {
-    margin: 0;
-    padding: 0 0 32px;
-    background: #f1f6fb;
-    color: #19324a;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
 }
-
-.site-header {
-    background: #f1f6fb;
+.header {
+    background-image: url(images/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
 }
-
-.site-header .ok {
-    position: sticky;
-    z-index: 1;
-    top: 0;
-    display: flex;
-    min-height: 82px;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 8px 5%;
-    background: #cddfef;
-    box-shadow: 0 2px 8px rgb(25 50 74 / 12%);
-}
-
 #logo {
-    display: block;
-    width: 65px;
-    height: 65px;
-    border-radius: 12px;
-    object-fit: cover;
+    margin-left: 10px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px; 
+    
 }
 
-.site-header nav {
+nav{
+    float: right;
+    padding-top: 20px;
+}
+
+.menu {
+    display: inline-block;
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.menu a {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    gap: 8px;
-}
-
-.site-header .menu a {
-    display: block;
-    padding: 10px 16px;
-    border-radius: 6px;
-    color: #19324a;
+    justify-content: space-between; 
+    align-items: center;
+    padding-right: 50px;
+    padding-left: 50px;
     text-decoration: none;
 }
+.header .ok{
+    position: sticky;
+    top: 0;
+    background-color: #CDDFEF;
+}
 
-.site-header .menu a:hover,
-.site-header .menu a[aria-current="page"] {
-    background: #fff;
-    color: #176da8;
+.menu a:hover {
+    color: black; 
+    text-decoration: underline; 
 }
 
 .site-heading {
@@ -189,20 +185,7 @@ form > input[type="reset"]:hover {
 }
 
 @media (max-width: 520px) {
-    .site-header .ok {
-        align-items: flex-start;
-        gap: 8px;
-        padding: 8px 12px;
-    }
 
-    .site-header nav {
-        gap: 2px;
-    }
-
-    .site-header .menu a {
-        padding: 10px 8px;
-        font-size: 0.85rem;
-    }
 
     .application-page,
     .confirmation-page {

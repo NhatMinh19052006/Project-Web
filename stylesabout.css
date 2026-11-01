@@ -1,103 +1,54 @@
 
 /* ===== About Page (Nguyet Linh) ===== */
 
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 body {
-    font-family: Arial, sans-serif;
-    color: #0b0a0a;
-    background-color: #faf7f7;
-    margin: 0;
+    margin: 0px;
 }
-
-/* ===== Header ===== */
-
 .header {
-    background-color: #CDDFEF;
-    width: 100%;
-    height: 70px;
-    padding: 0;
-    margin: 0;
+    background-image: url(images/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
 }
-
-.header .ok {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    padding: 0 40px;
-    box-sizing: border-box;
-    background-color: #CDDFEF;
-}
-
-/* Logo */
-
 #logo {
-    width: 65px;
-    height: 65px;
-    object-fit: contain;
-    display: block;
-    background: transparent;
-    mix-blend-mode: multiply;
+    margin-left: 10px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px; 
+    
 }
 
-/* Navigation */
+nav{
+    float: right;
+    padding-top: 20px;
+}
 
-.header nav {
+.menu {
+    display: inline-block;
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.menu a {
     display: flex;
-    flex: 1;
+    justify-content: space-between; 
     align-items: center;
-    justify-content: space-around;
-    margin-left: 40px;
-}
-
-.header .menu {
-    display: block;
-    margin: 0;
-    padding: 0;
-}
-
-.header .menu a {
-    display: block;
-    color: #4B286D;
+    padding-right: 50px;
+    padding-left: 50px;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px 15px;
+}
+.header .ok{
+    position: sticky;
+    top: 0;
+    background-color: #CDDFEF;
 }
 
-.header .menu a:hover {
-    color: #007bff;
-    text-decoration: underline;
-}
 .menu a:hover {
-    color: #007bff;
-    text-decoration: underline;
-}
-
-/* Navigation hover and text */
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-nav span {
-    color: #e6e3fb;
-    font-size: 14px;
+    color: black; 
+    text-decoration: underline; 
 }
 
 /* ===== Logo and Headings ===== */
